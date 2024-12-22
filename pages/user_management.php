@@ -1,7 +1,7 @@
-<div class="user-management">
-    <h2>Manage Customers</h2>
-    <button>Create User</button>
-    <table>
+<div class="container">
+    <h2>User Management</h2>
+    <button class="btn btn-primary mb-3">Create User</button>
+    <table class="table">
         <thead>
             <tr>
                 <th>Customer Name</th>
@@ -11,21 +11,16 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Loop through customer data from the database and display rows -->
-            <?php
-            // Example: Fetch customers from database
-            include('config.php');
-            $query = "SELECT * FROM customers";
-            $result = mysqli_query($conn, $query);
-            while($row = mysqli_fetch_assoc($result)) {
-                echo "<tr>
-                        <td>{$row['customer_name']}</td>
-                        <td>{$row['status']}</td>
-                        <td>{$row['billing_info']}</td>
-                        <td><a href='#'>Edit</a> | <a href='#'>Deactivate</a></td>
-                      </tr>";
-            }
-            ?>
+            <!-- Fetch and display customer data here -->
+            <tr>
+                <td>John Doe</td>
+                <td>Active</td>
+                <td>$50</td>
+                <td>
+                    <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm">Deactivate</a>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
