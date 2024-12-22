@@ -1,21 +1,4 @@
-<?php
-// Start session
-session_start();
 
-// // Include authentication and database connection files
-// require_once "includes/auth.php";
-// require_once "includes/db.php";
-
-// // Redirect to login if the user is not logged in
-// if (!isset($_SESSION['user_id'])) {
-//     header("Location: login.php");
-//     exit();
-// }
-
-// // Include page components
-// require_once "includes/header.php";
-// require_once "includes/sidebar.php";
-?>
 
 <!DOCTYPE html>
 <html lang="en">
