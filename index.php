@@ -12,9 +12,9 @@ session_start();
 //     exit();
 // }
 
-// Include page components
-require_once "includes/header.php";
-require_once "includes/sidebar.php";
+// // Include page components
+// require_once "includes/header.php";
+// require_once "includes/sidebar.php";
 ?>
 
 <!DOCTYPE html>
