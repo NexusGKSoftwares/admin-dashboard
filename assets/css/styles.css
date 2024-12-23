@@ -24,6 +24,18 @@ body {
     z-index: 1; /* Ensure content is below the sidebar */
 }
 
+/* Add space between sidebar and content */
+.main-content:before {
+    content: '';
+    display: block;
+    width: 15px; /* Space between sidebar and content */
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    left: 250px;
+    z-index: 999; /* Prevent overlap issues */
+}
+
 .sidebar .nav-link {
     color: #0026ff;
     font-size: 16px;
@@ -64,6 +76,7 @@ body {
     }
     .main-content {
         margin-left: 70px; /* Adjust content margin */
+        padding-left: 15px;
     }
     .sidebar .nav-link {
         font-size: 12px;
@@ -83,6 +96,7 @@ body {
     }
     .main-content {
         margin-left: 0; /* Full width content */
+        padding-left: 15px; /* Ensure spacing when sidebar is hidden */
     }
     .sidebar.show {
         left: 0; /* Slide sidebar into view when toggled */
