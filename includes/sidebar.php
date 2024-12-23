@@ -1,11 +1,27 @@
-<div class="bg-dark text-white" id="sidebar-wrapper" style="min-width: 250px;">
-    <div class="sidebar-heading text-center py-4 font-weight-bold border-bottom">Admin Panel</div>
-    <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fas fa-users"></i> Users</a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fas fa-file-invoice-dollar"></i> Billing</a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fas fa-chart-line"></i> Reports</a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fas fa-cogs"></i> Settings</a>
-        <a href="logout.php" class="list-group-item list-group-item-action bg-dark text-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
+<aside class="sidebar bg-light" style="width: 250px; position: fixed; top: 56px; left: 0; height: calc(100vh - 56px); overflow-y: auto; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);">
+    <div class="container-fluid mt-4">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="?page=dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=user_management">User Management</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=billing_management">Billing & Payments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=service_management">Service Management</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=usage_monitoring">Usage Monitoring</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=notifications">Notifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=reports">Reports</a>
+            </li>
+        </ul>
     </div>
-</div>
+</aside>
