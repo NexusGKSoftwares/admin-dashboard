@@ -4,15 +4,23 @@ body {
 }
 
 .sidebar {
-    height: 100vh;
+    width: 250px;
     position: fixed;
-    top: 0;
+    top: 56px;
     left: 0;
-    background-color: #343a40;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
 .sidebar .nav-link {
-    color: #fff;
+    color: #0026ff;
     font-size: 16px;
 }
 
@@ -20,9 +28,7 @@ body {
     background-color: #495057;
 }
 
-.main-content {
-    margin-left: 260px;
-}
+
 
 .card {
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
