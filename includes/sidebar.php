@@ -73,21 +73,21 @@
 </aside>
 
 <script>
-document.getElementById("toggleSidebar").addEventListener("click", function () {
+    document.getElementById("toggleSidebar").addEventListener("click", function () {
     const sidebar = document.getElementById("sidebar");
     const mainContent = document.getElementById("mainContent");
     const menuTextElements = document.querySelectorAll(".menu-text");
     const menuTitle = document.getElementById("menuTitle");
 
     if (sidebar.style.width === "250px") {
-        sidebar.style.width = "70px";
+        sidebar.style.width = "70px"; // Collapse sidebar
         mainContent.style.marginLeft = "70px"; // Adjust main content margin
         menuTextElements.forEach((element) => {
             element.style.display = "none"; // Hide menu text
         });
         menuTitle.style.display = "none"; // Hide menu title
     } else {
-        sidebar.style.width = "250px";
+        sidebar.style.width = "250px"; // Expand sidebar
         mainContent.style.marginLeft = "250px"; // Adjust main content margin
         menuTextElements.forEach((element) => {
             element.style.display = "inline"; // Show menu text
@@ -97,6 +97,6 @@ document.getElementById("toggleSidebar").addEventListener("click", function () {
 });
 
 </script>
-
 <!-- Add Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+c
