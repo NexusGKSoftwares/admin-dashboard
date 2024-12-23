@@ -8,19 +8,19 @@
             <li class="nav-item">
                 <a class="nav-link d-flex align-items-center" href="?page=dashboard">
                     <i class="bi bi-speedometer2"></i>
-                    <span class="ms-2 menu-text">Dashboard</span>
+                    <span class="ms-2 menu-text"> Dashboard</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link d-flex align-items-center" href="?page=user_management">
                     <i class="bi bi-people"></i>
-                    <span class="ms-2 menu-text">User Management</span>
+                    <span class="ms-2 menu-text"> User Management</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link d-flex align-items-center" href="?page=billing_management">
                     <i class="bi bi-credit-card"></i>
-                    <span class="ms-2 menu-text">Billing & Payments</span>
+                    <span class="ms-2 menu-text"> Billing & Payments</span>
                 </a>
             </li>
             <li class="nav-item">
