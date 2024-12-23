@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    font-size: 16px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+}
+
+.main-content {
+    margin-left: 260px;
+}
+
+.card {
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
