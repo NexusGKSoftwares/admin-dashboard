@@ -5,20 +5,20 @@ body {
 }
 
 .sidebar {
-    width: 250px;
+    width: 100px;
     position: fixed;
     top: 56px;
     left: 0;
     height: calc(100vh - 56px);
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Add background for better contrast */
+    background-color: #1f1818; /* Add background for better contrast */
     transition: width 0.3s ease, left 0.3s ease;
     z-index: 1000; /* Ensure the sidebar is above the content */
 }
 
 .main-content {
-    margin-left: 250px;
+    margin-left: 50px;
     padding: 20px;
     transition: margin-left 0.3s ease;
     z-index: 1; /* Ensure content is below the sidebar */

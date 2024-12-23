@@ -1,4 +1,4 @@
-<aside id="sidebar" class="sidebar bg-light" style="width: 250px; position: fixed; top: 56px; left: 0; height: calc(100vh - 56px); overflow-y: auto; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); transition: width 0.3s;">
+<aside id="sidebar" class="sidebar bg-light" style="position: fixed; top: 56px; left: 0; height: calc(100vh - 56px); overflow-y: auto; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); transition: width 0.3s;">
     <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-primary text-white">
         <span id="menuTitle">Menu</span>
         <button id="toggleSidebar" class="btn btn-sm btn-light">☰</button>
