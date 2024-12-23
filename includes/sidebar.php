@@ -1,4 +1,4 @@
-<aside class="sidebar bg-light" style="width: 250px; position: fixed; top: 0; left: 0; height: 100vh;">
+<aside class="sidebar bg-light" style="width: 250px; position: fixed; top: 56px; left: 0; height: calc(100vh - 56px); overflow-y: auto; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);">
     <div class="container-fluid mt-4">
         <ul class="nav flex-column">
             <li class="nav-item">
