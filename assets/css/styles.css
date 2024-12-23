@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
+    margin: 0; /* Remove default margin */
 }
 
 .sidebar {
@@ -11,25 +12,98 @@ body {
     height: calc(100vh - 56px);
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Add background for better contrast */
+    transition: width 0.3s ease;
 }
 
 .main-content {
     margin-left: 250px;
     padding: 20px;
+    transition: margin-left 0.3s ease;
 }
-
 
 .sidebar .nav-link {
     color: #0026ff;
     font-size: 16px;
+    display: flex;
+    align-items: center; /* Align text and icons */
+    padding: 10px;
+    text-decoration: none; /* Remove underline */
 }
 
 .sidebar .nav-link:hover {
     background-color: #495057;
+    color: #ffffff; /* Change text color on hover */
 }
 
-
-
 .card {
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px; /* Add rounded corners */
+    background-color: #ffffff;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 992px) { /* Medium screens (tablets) */
+    .sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 200px;
+    }
+    .sidebar .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) { /* Small screens (phones) */
+    .sidebar {
+        width: 70px; /* Collapse sidebar */
+    }
+    .main-content {
+        margin-left: 70px; /* Adjust content margin */
+    }
+    .sidebar .nav-link {
+        font-size: 12px;
+        justify-content: center; /* Center icons */
+    }
+    .sidebar .nav-link span { 
+        display: none; /* Hide text in collapsed sidebar */
+    }
+}
+
+@media (max-width: 576px) { /* Extra small screens */
+    .sidebar {
+        position: fixed;
+        left: -250px; /* Hide sidebar completely */
+        width: 250px;
+        transition: left 0.3s ease;
+    }
+    .main-content {
+        margin-left: 0; /* Full width content */
+    }
+    .sidebar.show {
+        left: 0; /* Slide sidebar into view when toggled */
+    }
+}
+
+/* Toggle Button (Visible on small screens) */
+#toggleButton {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    background-color: #495057;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    #toggleButton {
+        display: block; /* Show toggle button on small screens */
+    }
 }
