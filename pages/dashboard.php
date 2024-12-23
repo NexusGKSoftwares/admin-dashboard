@@ -1,3 +1,6 @@
+<main id="mainContent" style="margin-left: 200px; transition: margin-left 0.3s;">
+    <!-- Main content goes here -->
+    <div class="container">
 <div id="wrapper" class="d-flex flex-column flex-md-row">
     <!-- Page Content -->
     <div id="page-content-wrapper" class="w-100">

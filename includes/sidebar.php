@@ -73,25 +73,29 @@
 </aside>
 
 <script>
-    document.getElementById("toggleSidebar").addEventListener("click", function () {
-        const sidebar = document.getElementById("sidebar");
-        const menuTextElements = document.querySelectorAll(".menu-text");
-        const menuTitle = document.getElementById("menuTitle");
+document.getElementById("toggleSidebar").addEventListener("click", function () {
+    const sidebar = document.getElementById("sidebar");
+    const mainContent = document.getElementById("mainContent");
+    const menuTextElements = document.querySelectorAll(".menu-text");
+    const menuTitle = document.getElementById("menuTitle");
 
-        if (sidebar.style.width === "250px") {
-            sidebar.style.width = "70px";
-            menuTextElements.forEach((element) => {
-                element.style.display = "none"; // Hide menu text
-            });
-            menuTitle.style.display = "none"; // Hide menu title
-        } else {
-            sidebar.style.width = "250px";
-            menuTextElements.forEach((element) => {
-                element.style.display = "inline"; // Show menu text
-            });
-            menuTitle.style.display = "inline"; // Show menu title
-        }
-    });
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "70px";
+        mainContent.style.marginLeft = "70px"; // Adjust main content margin
+        menuTextElements.forEach((element) => {
+            element.style.display = "none"; // Hide menu text
+        });
+        menuTitle.style.display = "none"; // Hide menu title
+    } else {
+        sidebar.style.width = "250px";
+        mainContent.style.marginLeft = "250px"; // Adjust main content margin
+        menuTextElements.forEach((element) => {
+            element.style.display = "inline"; // Show menu text
+        });
+        menuTitle.style.display = "inline"; // Show menu title
+    }
+});
+
 </script>
 
 <!-- Add Bootstrap Icons -->
